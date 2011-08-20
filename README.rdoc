@@ -1,26 +1,28 @@
 = flickruby
 
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/metalelf0/flickruby
 
 == DESCRIPTION:
 
-FIX (describe your package)
+A library to interface with the Flickr REST API via Ruby, using nokogiri.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* currently it's in an early development stage - just a couple of methods like User#photos and Photo#comments.
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  photo = Photo.new(photo_id)
+  puts photo.title
+  photo.comments.each do |comment|
+    puts comment
+  end
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
-
-== INSTALL:
-
-* FIX (sudo gem install, anything else)
+* Ruby
+* Nokogiri
+* Rainbow
 
 == LICENSE:
 
